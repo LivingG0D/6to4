@@ -100,7 +100,7 @@ Learn how to set up and configure 6to4 IPv6 tunneling on Linux with this compreh
 
 Now both of your servers are connected, and you have a local IPv6 address:
 
-External IP: `2001:470:1f10:e1f::2`
+Kharej IP: `2001:470:1f10:e1f::2`
 
 Iranian IP: `2001:470:1f10:e1f::1`
 
