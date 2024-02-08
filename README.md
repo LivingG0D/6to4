@@ -104,6 +104,6 @@ Kharej IP: `2001:470:1f10:e1f::2`
 
 Iran IP: `2001:470:1f10:e1f::1`
 
-You can now use the external IP for tunneling purposes, such as in DecodomoDor.
+الان از آیپی ساخته شده برای خارج میتونید برای تانل مثل دکودمودور استفاده کنید
 
 For further assistance, visit [our Telegram channel](https://t.me/nyx_host).
