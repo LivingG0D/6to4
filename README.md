@@ -102,7 +102,7 @@ Now both of your servers are connected, and you have a local IPv6 address:
 
 Kharej IP: `2001:470:1f10:e1f::2`
 
-Iranian IP: `2001:470:1f10:e1f::1`
+Iran IP: `2001:470:1f10:e1f::1`
 
 You can now use the external IP for tunneling purposes, such as in DecodomoDor.
 
