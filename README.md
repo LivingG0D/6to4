@@ -30,23 +30,41 @@ ip link set GRE6Tun_KH up
 
 
 iptables -F
+
 iptables -X
+
 iptables -t nat -F
+
 iptables -t nat -X
+
 iptables -t mangle -F
+
 iptables -t mangle -X
+
 iptables -P INPUT ACCEPT
+
 iptables -P FORWARD ACCEPT
+
 iptables -P OUTPUT ACCEPT
+
 iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+
 iptables -A FORWARD  -j ACCEPT
+
 sudo sysctl -w net.ipv4.ip_forward=1
+
 echo "net.ipv4.ip_forward=1" > /etc/sysctl.conf
+
 sysctl -p
+
 service iptables save
+
 service iptables restart
+
 service iptables stop
+
 service iptables start
+
 
 بعد از سیو کردن و خروج این دستورات رو به ترتیب وارد کنید
 
