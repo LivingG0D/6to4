@@ -12,6 +12,7 @@ Learn how to set up and configure 6to4 IPv6 tunneling on Linux with this guide.
 2. Copy and paste the following commands into the file, replacing the placeholder IPs with your external and Iranian IPs:
    ```bash
    #!/bin/bash
+```
 ip tunnel add 6to4tun_IR mode sit remote ipharej local ipiran
 ip -6 addr add 2001:470:1f10:e1f::1/64 dev 6to4tun_IR
 ip link set 6to4tun_IR mtu 1480
