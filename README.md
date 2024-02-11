@@ -12,16 +12,16 @@ Learn how to set up and configure 6to4 IPv6 tunneling on Linux with this guide.
 2. Copy and paste the following commands into the file, replacing the placeholder IPs with your external and Iranian IPs:
    ```bash
    #!/bin/bash
-```
-ip tunnel add 6to4tun_IR mode sit remote ipharej local ipiran
-ip -6 addr add 2001:470:1f10:e1f::1/64 dev 6to4tun_IR
-ip link set 6to4tun_IR mtu 1480
-ip link set 6to4tun_IR up
-# confige tunnele GRE6 ya IPIPv6 IR
-ip -6 tunnel add GRE6Tun_IR mode ip6gre remote 2001:470:1f10:e1f::2 local 2001:470:1f10:e1f::1
-ip addr add 172.16.1.1/30 dev GRE6Tun_IR
-ip link set GRE6Tun_IR mtu 1436
-ip link set GRE6Tun_IR up
+
+   ip tunnel add 6to4tun_IR mode sit remote ipharej local ipiran
+   ip -6 addr add 2001:470:1f10:e1f::1/64 dev 6to4tun_IR
+   ip link set 6to4tun_IR mtu 1480
+   ip link set 6to4tun_IR up
+   # confige tunnele GRE6 ya IPIPv6 IR
+   ip -6 tunnel add GRE6Tun_IR mode ip6gre remote 2001:470:1f10:e1f::2 local 2001:470:1f10:e1f::1
+   ip addr add 172.16.1.1/30 dev GRE6Tun_IR
+   ip link set GRE6Tun_IR mtu 1436
+   ip link set GRE6Tun_IR up
 
    iptables -F
    iptables -X
